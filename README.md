@@ -17,7 +17,13 @@ The project is structured as a monorepo with three main components:
 - When an event occurs (e.g., successful payment, error, or user closes the modal), the Checkout App uses `window.parent.postMessage` to communicate securely back to the SDK.
 - The SDK listens for these messages, animates the iframe out (if closed or successful), and triggers the respective callback functions (`onSuccess`, `onClose`, `onError`) provided by the host developer.
 
-## How to Run
+## Live Links & Repositories
+
+- **Demo Store:** [https://embeddable-checkout-checkout-x87w.vercel.app](https://embeddable-checkout-checkout-x87w.vercel.app)
+- **Hosted Checkout App:** [https://embeddable-checkout-checkout-psi.vercel.app](https://embeddable-checkout-checkout-psi.vercel.app)
+- **GitHub Repository:** [abhishekgurjarin/Embeddable-Checkout](https://github.com/abhishekgurjarin/Embeddable-Checkout)
+
+## How to Run Locally
 
 1. **Install Dependencies**
    ```bash
