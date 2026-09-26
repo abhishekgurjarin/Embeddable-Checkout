@@ -50,7 +50,7 @@ export const DodoCheckout = {
     }
 
     const iframe = document.createElement('iframe');
-    const checkoutUrl = 'http://localhost:5173';
+    const checkoutUrl = 'https://embeddable-checkout-checkout-x87w.vercel.app';
     
     iframe.src = `${checkoutUrl}?productId=${encodeURIComponent(options.productId)}`;
     Object.assign(iframe.style, {
