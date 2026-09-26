@@ -1,0 +1,15 @@
+{
+  "name": "embeddable-checkout",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "",
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "author": "",
+  "license": "ISC"
+}

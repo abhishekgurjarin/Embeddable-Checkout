@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Store - Demo</title>
+    <style>
+      :root {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #1a1a1a;
+        background-color: #f9fafb;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .container {
+        width: 100%;
+        max-width: 800px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .header {
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .header p {
+        color: #6b7280;
+        margin-top: 8px;
+      }
+      .product-card {
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .product-info h2 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      .product-info p {
+        color: #6b7280;
+        margin-top: 4px;
+      }
+      .product-price {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .btn-buy {
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-top: 16px;
+        width: 100%;
+      }
+      .btn-buy:hover {
+        background: #333;
+      }
+      .logs {
+        background: #111827;
+        color: #10b981;
+        font-family: monospace;
+        padding: 16px;
+        border-radius: 8px;
+        height: 300px;
+        overflow-y: auto;
+      }
+      .logs h3 {
+        color: #fff;
+        margin-top: 0;
+        border-bottom: 1px solid #374151;
+        padding-bottom: 8px;
+      }
+      .log-entry {
+        margin-bottom: 8px;
+        border-bottom: 1px solid #1f2937;
+        padding-bottom: 8px;
+      }
+      .log-time {
+        color: #6b7280;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Acme Software</h1>
+        <p>The best software for your business</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-info">
+          <h2>Premium Plan</h2>
+          <p>Unlimited access to all features</p>
+          <button id="buy-btn" class="btn-buy">Buy now - $29.00</button>
+        </div>
+        <div class="product-price">$29.00</div>
+      </div>
+
+      <div class="logs">
+        <h3>SDK Event Logs</h3>
+        <div id="log-container">
+          <div class="log-entry">
+            <span class="log-time">System</span>
+            <div>Waiting for events...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- We import our TS file which imports the SDK -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
